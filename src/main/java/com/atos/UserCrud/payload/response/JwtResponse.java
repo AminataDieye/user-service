@@ -3,7 +3,7 @@ package com.atos.UserCrud.payload.response;
 import java.util.List;
 
 public class JwtResponse {
-    private Long id;
+    private String id;
     private String token;
     private String type;
     private String username;
@@ -13,7 +13,7 @@ public class JwtResponse {
     public JwtResponse() {
     }
 
-    public JwtResponse(String token, Long id, String username, String email, List<String> roles) {
+    public JwtResponse(String token, String id, String username, String email, List<String> roles) {
         this.id = id;
         this.token = token;
         this.username = username;
@@ -21,11 +21,11 @@ public class JwtResponse {
         this.roles = roles;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
